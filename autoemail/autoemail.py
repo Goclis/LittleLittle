@@ -89,10 +89,7 @@ def main():
 	if verify(username, password):
 		global latest_ip
 
-		# 刚启动的时候发送一次，以防重启导致的IP变化
-		latest_ip = get_eth0_ip()
-		send_email(username, password, latest_ip)
-		
+        # 启动定时器		
 		set_interval(check, 5)
 	else:
 		print u'存在错误，请尝试重新输入账号密码'
