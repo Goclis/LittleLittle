@@ -7,11 +7,12 @@ import time
 import sys
 import smtplib
 from email.mime.text import MIMEText
+import emailconf
 
 
 # 邮箱的账户密码
-username = 'username'
-password = 'password'
+username = emailconf.username
+password = emailconf.password
 latest_ip = ''
 
 

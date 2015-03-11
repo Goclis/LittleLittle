@@ -1,14 +1,26 @@
 # LittleLittle
 
 ### 列表
-
 - autoemail
 - cleanproj
 
 ### autoemail
 实验室的机器总是有可能因为被人拔网线重启或者网络故障什么的导致IP变化，从而影响在上面的VPN服务，此脚本在于让机器自动在IP变化时将新IP发至校内邮箱，这样在宿舍也能知道新的IP了。
 
-使用[Upstart](http://upstart.ubuntu.com/cookbook)进行启动控制，操作如下。
+__邮箱账号密码__
+
+程序通过读取配置文件来获取用来发送邮件的邮箱账号和密码，使用者自行在程序目录下创建`emailconf.py`文件，内容如下。
+
+```
+# -*- coding:utf-8 -*-
+
+username = '你的邮箱账号'
+password = '你的邮箱密码'
+```
+
+__程序启动控制__
+
+使用[Upstart](http://upstart.ubuntu.com/cookbook)进行启动控制，项目中提供了`autoemail.conf`文件，需要自行配置一下，操作如下。
 
 ```
 $ sudo mv autoemail.conf /etc/init

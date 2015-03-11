@@ -54,3 +54,6 @@ docs/_build/
 target/
 
 .DS_Store
+
+# autoemail configuration file
+autoemail/emailconf.py
