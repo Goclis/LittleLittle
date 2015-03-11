@@ -20,7 +20,7 @@ password = '你的邮箱密码'
 
 __程序启动控制__
 
-使用[Upstart](http://upstart.ubuntu.com/cookbook)进行启动控制，项目中提供了`autoemail.conf`文件，需要自行配置一下，操作如下。
+使用[Upstart](http://upstart.ubuntu.com/cookbook)进行启动控制，项目中提供了`autoemail.conf`文件，需要自行配置一下文件中的路径（`/path`）后将其放至upstart的目录下，操作如下。
 
 ```
 $ sudo mv autoemail.conf /etc/init
