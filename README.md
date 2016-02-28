@@ -41,7 +41,6 @@ $ stop autoemail
 
 没弄命令行参数，硬编码清除`Debug`、`Release`、`ipch`也就够了。
 
-
 ### toggle-hide-files
 用于在OS X上控制在Finder中`显示/隐藏`隐藏文件的sh脚本。
 
@@ -49,3 +48,4 @@ $ stop autoemail
 
 ### notifygrade
 如果信息门户上出了新课程的成绩时，邮件通知一下。
+
